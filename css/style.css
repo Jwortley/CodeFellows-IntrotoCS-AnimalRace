@@ -1,0 +1,35 @@
+body{
+  margin: 0px;
+  background-color: lightblue;
+}
+.wrapper{
+  width: 100%;
+}
+.racerMenuWrapper{
+  width:100%;
+}
+.racerMenu{
+  width:100%;
+  float: center;
+  text-align: center;
+}
+.racerCell{
+  background-color: lightgreen;
+  display: inline-block;
+  border: 2px gray solid;
+}
+
+.racerStats{
+  text-align: center;
+}
+#beginRace{
+  height:100px;
+  width:600px;
+  margin: 0 auto;
+}
+.addContestantButton{
+  height:25;
+  width: 100%;
+  font-size: 20;
+}
+
