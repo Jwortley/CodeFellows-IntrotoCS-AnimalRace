@@ -2,6 +2,7 @@
 <head>
   <title>Animal Racing!</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="js/AnimalRace.js"></script>
 </head>
@@ -9,42 +10,42 @@
 <div class="wrapper">
   <div class="racerMenuWrapper">
     <div class="racerMenu">
-      <h1 class="racerStats">Select Racing Contestants</h1>
+      <h1 class="racingHeaderText">Select Racing Contestants</h1>
         <div class="racerCell">
           <h3 class="racerStats">Roger</h3>
           <img src="img/rabbit5.png"/>
           <p class="racerStats">Speed: 7/10</p>
           <p class="racerStats">Will: 6/10</p>
-          <button id="addRabbit" class="addContestantButton" onclick="addRacer(rabbit)">Add contestant</button>
+          <button id="addRabbit" class="addContestantButton">Add contestant</button>
         </div>
         <div class="racerCell">
           <h3 class="racerStats">Joey</h3>
           <img src="img/australia3.png">
           <p class="racerStats">Speed: 6/10</p>
           <p class="racerStats">Will: 6/10</p>
-          <button id="addKangaroo" class="addContestantButton" onclick="addRacer(kangaroo)">Add contestant</button>
+          <button id="addKangaroo" class="addContestantButton">Add contestant</button>
         </div>
         <div class="racerCell">
           <h3 class="racerStats">Donatello</h3>
           <img src="img/turtle2.png">
           <p class="racerStats">Speed: 3/10</p>
           <p class="racerStats">Will: 9/10</p>
-          <button id="addTurtle" class="addContestantButton" onclick="addRacer(turtle)">Add contestant</button>
+          <button id="addTurtle" class="addContestantButton">Add contestant</button>
         </div>
         <div class="racerCell">
           <h3 class="racerStats">Sven</h3>
           <img src="img/deer3.png">
           <p class="racerStats">Speed: 5/10</p>
           <p class="racerStats">Will: 7/10</p>
-          <button id="addDeer" class="addContestantButton" onclick="addRacer(deer)">Add contestant</button>
+          <button id="addDeer" class="addContestantButton">Add contestant</button>
         </div>
     </div>
   </div>
   <div id="raceMessageMenu" style="height:25; text-align:center;">
-    <h2 id="raceMessage"></h2>
+    <h3 id="raceMessage"></h3>
   </div>
     <div style="text-align: center;">
-      <button id="beginRace" onclick="startRace()"><span style="font-size:24;">Begin Race</span></button>
+      <button id="beginRace"><span style="font-size:24;">Begin Race</span></button>
     </div>
 </div>
 </body>

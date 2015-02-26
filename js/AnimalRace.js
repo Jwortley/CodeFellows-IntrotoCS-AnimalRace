@@ -1,19 +1,33 @@
 $(document).ready(function(){
   $("#addRabbit").click(function(){
     $(this).prop("disabled",true);
+    addRacer(rabbit); //adds rabbit to the racer array
     $(this).text("Contestant Added");
   });
   $("#addTurtle").click(function(){
     $(this).prop("disabled",true);
+    addRacer(turtle); //adds turtle to the racer array
     $(this).text("Contestant Added");
   });
   $("#addDeer").click(function(){
     $(this).prop("disabled",true);
+    addRacer(deer); //adds deer to the racer array
     $(this).text("Contestant Added");
   });
   $("#addKangaroo").click(function(){
     $(this).prop("disabled",true);
+    addRacer(kangaroo); //adds kangaroo to the racer array
     $(this).text("Contestant Added");
+  });
+  $("#beginRace").on('click', function(){
+    //checks if there are more than two racers to actually start the race
+    //if not, it will return a message and will not start the race
+    if(racers.length < 2){
+    $("#raceMessage").replaceWith("<h3 id='raceMessage'>Need 2 or more racers to begin race</h3>");
+  }
+  else{
+    startRace();
+  }
   });
 });
 
@@ -48,10 +62,6 @@ var racers = [];
 
 var startRace = function(){
   var stillRunning;
-  if(racers.length < 2){
-    $("#raceMessage").replaceWith("<h2 id='raceMessage'>Need 2 or more racers to begin race</h2>");
-  }
-  else{
     do{
       $("#raceMessage").replaceWith("<h2 id='raceMessage'></h2>");
       for(var racer in racers){
@@ -66,7 +76,6 @@ var startRace = function(){
       }
     }
   while(stillRunning===true);
-  }
 
 };
 var addRacer = function(animal){
